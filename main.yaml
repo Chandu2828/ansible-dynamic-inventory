@@ -1,0 +1,6 @@
+- name: configure frontend server
+  hosts: frontend #as you have grouped the instances under this tag
+  become: yes
+  tasks:
+  - name: ping
+    ping:
