@@ -1,6 +1,7 @@
 - name: configure frontend server
   hosts: frontend #as you have grouped the instances under this tag
   become: yes
+  serial: 2
   tasks:
   - name: ping
     ping:
